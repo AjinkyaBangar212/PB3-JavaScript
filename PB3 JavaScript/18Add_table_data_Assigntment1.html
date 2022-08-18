@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+
+
+
+
+function myFunction() {
+  var table = document.getElementById("myTable");
+  var name1 = document.getElementById("t1").value;
+  var name2 = document.getElementById("t2").value;
+
+
+
+
+  var tr = document.createElement('tr');
+  var td1 = document.createElement('td');
+  var td2 = document.createElement('td');
+
+
+  td1.innerHTML = name1;
+  td2.innerHTML = name2;
+
+
+
+  tr.appendChild(td1);
+  tr.appendChild(td2);
+
+table.appendChild(tr);
+
+}
+
+
+
+
+</script>
+
+</head>
+<body>
+
+
+Add Name : <input type="text" id="t1"><br>
+
+Add Percentage : <input type="text" id="t2"><br>
+  
+<br>
+
+<input type="button" value="Add" onclick="myFunction()">
+<br>
+
+
+
+
+
+
+<table id="myTable" style="border: 3px solid black;">
+
+<tr>
+  <th>Name</th>
+    <th>Percentage</th>
+  <tr>
+    <tr>
+    <td>Ajinkya </td>
+    <td>100</td>
+  </tr>
+  
+</table>
+
+
+
+
+
+</body>
+</html>

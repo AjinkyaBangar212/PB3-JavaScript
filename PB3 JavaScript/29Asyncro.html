@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+  <script type="text/javascript">
+ 	
+ 		function greet()
+ 		{
+ 			alert("Good Morning........");
+ 		} 	
+
+       var timeid = setTimeout(greet,5000);
+    
+       //or optional using big fat arrow
+        var timeid2 = setTimeout( () => alert("gn"),3000   );
+
+       console.log("Welcome");
+       console.log("Mul = " + (11*2));
+
+
+      ////////////////////////////////////////////////
+       var intervalid = setInterval(greet,3000);
+
+
+       function stop()
+       {
+       	clearInterval(intervalid);
+       }
+
+      console.log("After");
+
+
+ 
+
+  </script>
+</head>
+<body>
+   <input type="button" value="stop" onclick="stop()">
+</body>
+</html>

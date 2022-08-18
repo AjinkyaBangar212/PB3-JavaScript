@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		
+function Add(){
+
+var fname = document.getElementById("t1").value;
+var ul = document.getElementById("fruitlist");
+var li = document.createElement('li');
+li.innerHTML = fname;
+ul.appendChild(li);
+
+}
+
+
+
+	</script>
+</head>
+<body>
+
+ <form>
+ 	
+  Add Fruit : <input type="text" id="t1"><br>
+
+  <input type="button" value="ADD FRUIT" onclick="Add()">
+
+
+  <ul id="fruitlist">
+  	<li>Mango</li>
+  </ul>
+
+
+ </form>
+
+
+
+</body>
+</html>

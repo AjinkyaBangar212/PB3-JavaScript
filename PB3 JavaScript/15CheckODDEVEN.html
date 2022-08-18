@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+
+           function oddeven()
+           {
+
+       
+        var n = document.getElementById("t1").value;
+
+        if(n % 2 == 0 )
+        {
+           
+ 			document.getElementById("Result").value = n + " Number Is Even";
+            document.getElementById("h1t").innerHTML = n + " Number Is Even";
+                           
+        }
+
+    
+          else
+          {
+ 			document.getElementById("Result").value = n + " Number Is Odd";
+              document.getElementById("h1t").innerHTML = n + " Number Is Odd";
+                   
+          }
+
+
+
+           }		
+
+
+	</script>
+</head>
+<body>
+
+Enter Number : <input type="text" id="t1"><br>
+
+Result : <input type="text" id="Result"><br>
+
+
+<input type="button" value="CLICK ME" onclick="oddeven()"><br>
+
+
+
+<h1 id="h1t"> </h1>
+
+
+
+</body>
+</html>

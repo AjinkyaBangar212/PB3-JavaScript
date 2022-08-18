@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<script type="text/javascript">
+		
+
+var x = function (a,b)
+{
+	document.write("Sum = " + (a+b)   + "<br>");
+}
+
+x (11 , 20);
+
+/////////////////////////
+
+var y = (a , b) => document.write("Sum = " + (a+b)   + "<br>");
+
+
+y(50,60);
+
+
+
+////////////////////////////
+
+
+function greet()
+{
+
+	document.write("Welcome to tqqp  <br>");
+}
+
+
+
+
+function login(usernm , pass , f1)
+{
+    f1();
+
+    if(usernm == "Admin" && pass == "123"){
+    	document.write("Login Succsessfully....");
+        }
+    	 else{
+    	document.write("Invalid Login ");}
+}
+
+
+
+login("Admin" , "123" , greet);
+
+
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

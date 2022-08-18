@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>	</title>
+	<script type="text/javascript">
+		
+
+      var arr = ["Ajinkya"  , "Prasad" , "Ram" , "Sham"];
+
+      document.write(arr.toString()      +"<br>");  //this converting array to string op =  Ajinkya,Prasad,Ram,Sham
+
+// join()
+
+  document.write(arr.join("****")      +"<br>"); // joining your array with **** op Ajinkya****Prasad****Ram****Sham
+   document.write(arr.join("-")      +"<br>"); // joining your array with - op Ajinkya-Prasad-Ram-Sham
+   document.write(arr.join("%%%%%%%")      +"<br>"); // joining your array with %%%%%%% op Ajinkya%%%%%%%Prasad%%%%%%%Ram%%%%%%%Sham
+
+
+
+ //pop()   remove element from last
+
+ document.write(arr.pop()      +"<br>");  //removing last element from array op removing - Sham
+
+ //push()  adding element in last
+
+
+document.write(arr.push("Rohini")      +"<br>");  //adding element in last of array op adding - Rohini in last
+
+document.write(arr  +"<br>");  
+
+
+
+//shift() removing element in begining of array
+
+ 
+ document.write(arr.shift()      +"<br>");  //removing first element from array op removing - Ajinkya
+
+
+ //unshift() adding element in begining of array
+
+ 
+ document.write(arr.unshift("Sushmita")      +"<br>");  //adding first element in array     op Adding  - Sushmita
+
+document.write(arr  +"<br>");  
+
+
+
+//splice()
+
+document.write(arr.splice(1,3, "Ajinkya" , "Shweta" , "Aish" , "Lalita")  +"<br>");  
+document.write(arr  +"<br>");  
+
+
+
+
+//concat() 
+
+ var arr2 = [1 , 2 , 3 , 4 , 5 , 6 , 70 , 80 , 90 , 50 , 60 , 5];
+ document.write(arr.concat(arr2)  +"<br>");  
+
+
+// slice()  
+
+document.write(arr.slice(0 , 4)  +"<br>");  
+
+
+//reverse()
+document.write(arr  +"<br>");  
+
+document.write(arr.reverse()  +"<br>");  
+
+
+
+//sort()
+
+document.write(arr.sort()  +"<br>");  
+
+
+ 
+
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

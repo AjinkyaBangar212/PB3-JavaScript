@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		
+
+		var e1 = {
+ 		"id" : 100,
+ 		"name" : "Ajit",
+
+
+ 		"display" : function (a,b,c)
+ 		             {
+ 		             	console.log(this);
+ 		             	console.log("Id= " + this.id + "Name =" +this.name + "a=" + a + "b=" + b + "c= " + c);
+ 		             }
+
+		};
+
+
+
+ var s2 = {"id": 10001 , "name" : "Raghav"};
+
+ var d1 = e1.display;
+ d1.call(s2,10,20,30);
+
+
+
+
+
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

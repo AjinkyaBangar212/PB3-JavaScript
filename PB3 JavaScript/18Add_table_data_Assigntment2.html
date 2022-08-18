@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		
+		function fun()
+		{
+            
+			
+       
+			var n = document.getElementById("t1").value;
+
+			var i = document.getElementById("t2").value;
+
+			var p = document.getElementById("t3").value;
+
+
+
+
+ var tr= document.createElement('tr');
+ var td1 = document.createElement('td');
+ var td2 = document.createElement('td');
+var td3 = document.createElement('td');
+
+
+
+ td1.innerHTML = n ;
+  td2.innerHTML = i ;
+   td3.innerHTML = p ;
+
+
+tr.appendChild(td1);
+tr.appendChild(td2);
+tr.appendChild(td3);
+
+var t = document.getElementById("table1");
+t.appendChild(tr);
+
+
+
+
+
+
+		}
+
+
+
+
+
+	</script>
+</head>
+<body>
+
+	Enter Product Name : <input type="text" id="t1"><br>
+
+	Enter Product ID : <input type="text" id="t2"><br>
+
+	Enter Product Price : <input type="text" id="t3"><br>
+
+
+  <input type="button" Value ="Add to Cart"     onclick="fun()"><br>
+
+
+  <table id = "table1" style="border: 1px solid black;">
+  	
+  	<tr>
+  		<td>Product Name</td>
+  		<td>Product ID</td>
+  		<td>Product Price</td>
+  	</tr>
+
+
+  </table>
+
+
+
+
+
+
+</body>
+</html>

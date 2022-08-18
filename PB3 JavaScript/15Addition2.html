@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>	</title>
+	<script type="text/javascript">
+		
+       function oddeven()
+       {
+
+         var n = parseInt(document.getElementById("number1").value);
+
+
+      
+         if( n % 2 == 0)
+         {
+            document.getElementById("d1").innerHTML = n + " is Even Number";
+         }
+
+         else{
+         	document.getElementById("d1").innerHTML = n + " is Odd Number";
+         }
+
+
+
+       }
+
+
+
+
+	</script>
+</head>
+<body>
+
+
+      Enter Number To check Number Is Odd Or Even : <input type="text"  id="number1"><br>
+
+      <input type="button" value ="SUBMITT" onclick="oddeven()">
+   
+
+       <div id="d1">	</div>
+
+
+</body>
+</html>

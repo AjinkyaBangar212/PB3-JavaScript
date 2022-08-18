@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		
+		var a = {}; // emplty object
+
+		var b = {"sid": 101 ,  "sname": "Ajinkya" , "Percentage" : 100};
+
+		var c = {"sid" : 102 , "sname": "Ram" , "Percentage": 99 };
+
+
+		document.write(JSON.stringify(b));
+
+
+		console.log(b);
+		console.log(b.sid);
+		console.log(b.sname);
+		console.log(b.Percentage);
+		document.write(b.Percentage)
+
+ console.log("sid "    + b["sid"]);
+ console.log("sname  "   + b["sname"]);
+
+
+
+        // for adding object after creation
+
+        b.city = "Pune";  //for adding new city 
+        b["mobile"] = 90505045050; //fro adding new mobile
+        b["sname"] = "Deepa";   // for replacing
+
+         console.log(b.sname); 
+         console.log(b);
+
+   
+         delete b.sname;  //for deleting
+
+         console.log(b);
+   console.log(c);
+
+
+
+
+
+
+
+
+
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

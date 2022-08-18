@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		
+
+
+       function ServerCall(url , id)
+       {
+       	return new Promise(function (resolve,reject)
+       	{
+       	var iserror = false;
+       	var data = "";
+
+ 
+           setTimeout(  () =>
+           {
+           	console.log("Time up")
+           	if(!iserror)
+           		resolve({"id": 101 , "name": "Surya", "age": 25});
+           	else
+           		reject("Error ocuured.......!!");
+           }, 8000);
+
+
+       });
+       }
+ 
+
+
+   var promise = ServerCall("hhtps://example.com" , 101);
+   console.log(promise);
+   promise.then(d=>{
+   	console.log(promise);
+   	alert(JSON.stringify(d));
+   },err=> alert(err));
+
+
+
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

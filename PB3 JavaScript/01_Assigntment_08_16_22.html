@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+	
+    var arr = [];
+
+
+    function add()
+    {
+    	var a = document.getElementById("t1").value;
+        var b = document.getElementById("t2").value;
+
+        fun(a,b);
+
+    }
+
+
+    function fun(nm , per)
+    {
+      this.nm = nm;
+      this.per = per;
+
+     arr.push(this.nm);
+     arr.push(this.per);
+
+      console.log(arr);
+    }
+
+
+
+
+
+ function remove()
+ {
+var a = document.getElementById("t1").value;
+        var b = document.getElementById("t2").value;
+
+        fun1(a,b);
+ }
+
+ 
+  function fun1(nm , per)
+    {
+      this.nm = nm;
+      this.per = per;
+
+     arr.pop(this.nm);
+     arr.pop(this.per);
+
+      console.log(arr);
+    }
+
+
+
+
+</script>
+</head>
+<body>
+      Enter Student Name : <input type="text" id="t1"><br>
+      Enter Student Name : <input type="text" id="t2"><br>
+     
+
+     <input type="button" value="Add" onclick="add()"><br>
+
+     <input type="button" value="Remove" onclick="remove()"><br>
+
+
+
+
+
+</body>
+</html>

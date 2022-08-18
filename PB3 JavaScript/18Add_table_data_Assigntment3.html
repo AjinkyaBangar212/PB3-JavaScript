@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+
+		
+
+		function func(){
+
+
+   var n = document.getElementById("t1").value;
+   var r = document.getElementById("t2").value;
+   var m = document.getElementById("t3").value;
+
+
+  var tr = document.createElement('tr');
+  var td1 = document.createElement('td');
+  var td2 = document.createElement('td');
+  var td3 = document.createElement('td');
+
+
+  td1.innerHTML = n; 
+  td2.innerHTML = r;
+  td3.innerHTML = m;
+
+
+  tr.appendChild(td1);
+  tr.appendChild(td2);
+  tr.appendChild(td3);
+
+  var t = document.getElementById("table1");
+
+  t.appendChild(tr);
+
+
+}
+
+
+	</script>
+</head>
+<body>
+
+
+Enter name : <input type="text" id="t1"><br>
+Enter Roll No  : <input type="text" id="t2"><br>
+Enter Mobile : <input type="text" id="t3"><br>
+
+
+<input type="button" value="CLICK TO ADD" onclick="func()"><br>
+
+
+
+<table id="table1"      style="border: 1px solid black;"  >
+<tr>
+<td>Name</td>
+<td>Roll No</td>
+<td>Mobile</td>
+</tr>
+	
+</table>
+
+
+
+</body>
+</html>

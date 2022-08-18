@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		
+		var emp = {}; // creating empty obj
+
+        emp['name'] = "Ajinkya";
+        emp['salary'] = 9999999999;
+
+        // you can also assign function to your object
+
+        emp['add'] = function fun() 
+                        {
+                        	var a =10 ; var b = 10;
+
+                        	return a+b;
+                        }
+
+      
+        console.log(emp);
+
+
+      // how to display 
+
+                document.write(emp.name + "<br>");
+                document.write(emp.salary + "<br>");
+                document.write(emp.add() + "<br>");
+
+
+
+////////  2 nd way to creating object is///////////////////////////////////////////////////////////////////////////////
+
+
+
+		var emp1 = {
+
+             name : "Ajinkya",
+             salary : 99999999,
+
+             add : function fun1()
+                     {
+                     	var x =50 ;  var y = 10;
+
+                     	return x+y;
+                     }
+	};
+
+
+
+
+   console.log(emp1);
+
+
+  // how to display 
+
+             document.write(emp1.name + "<br>");
+  			document.write(emp1.salary + "<br>");
+  			document.write(emp1.add() + "<br>");
+
+
+
+
+
+
+  ////////////   3rd way to creation object
+
+     var emp3 = new Object();
+   
+      emp3.name = "Ajinkya";
+      emp3.salary =  999999999;
+
+
+
+      emp3.ok = function fun2()
+      					{
+      						var i = 90 ; var j = 30;
+      						return i*j;
+      					}
+
+
+      	 console.log(emp3);				
+
+
+
+ // how to display 
+
+             document.write(emp3.name + "<br>");
+  			document.write(emp3.salary + "<br>");
+  			document.write(emp3.ok() + "<br>");
+
+
+
+
+
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

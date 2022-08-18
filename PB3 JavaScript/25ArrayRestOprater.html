@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		
+
+  function m1(a,b,c)
+  {
+  	 document.write("Sum " + (a+b+c)   + "<br>");
+  }
+
+ m1(1 , 2 , 3);
+
+ 
+
+
+ //function defination ------rest parameter
+
+
+
+    function m2(...a)
+    {
+      var sum = 0;
+     
+      for(var i = 0 ; i<a.length;i++)
+      {
+          sum = sum + a[i];
+            
+      }
+
+      document.write(sum);
+
+    }
+
+    m2(10,20,30,40,50,80,7,70,90,70,80);
+
+
+
+
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		
+//object creation literal way
+  var b = {"sid": 101 , "sname": "Aj"  , "Percentage": 90}; 
+
+//////////////////////////////////////////////////////
+
+function Student(sid,sname,per)
+{
+	var obj= {};
+	obj.rollno = sid;
+	obj.studentname = sname;
+	obj.Percentage = per;
+	return obj;
+}
+
+  var obj1 = Student(1 , "Sakshi" , 99);
+
+  document.write(obj1.rollno + obj1.studentname + obj1.Percentage);
+
+document.write("<br>");
+  ///////////////////////////////////////////////
+
+
+
+// object creation by consructor
+
+ function stud(sid,nm,per)
+ {
+   this.StudID = sid;
+   this.StudName = nm;
+   this.Per = per;
+ }
+
+ var obj2 = new stud(101 , "Ajinkya" , 100);
+
+ document.write(obj2.StudID + obj2.StudName + obj2.Per);
+
+
+
+
+
+
+
+
+
+
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

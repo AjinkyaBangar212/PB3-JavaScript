@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+
+
+
+
+function myFunction() {
+  var table = document.getElementById("myTable");
+  var name1 = document.getElementById("t1").value;
+  var name2 = document.getElementById("t2").value;
+
+  var row = table.insertRow(0);
+  var cell1 = row.insertCell(0);
+  var cell2 = row.insertCell(1);
+  cell1.innerHTML = name1;
+  cell2.innerHTML = name2;
+
+
+}
+
+
+
+
+</script>
+
+</head>
+<body>
+
+
+Add Name : <input type="text" id="t1"><br>
+
+Add Percentage : <input type="text" id="t2"><br>
+  
+<br>
+
+<input type="button" value="Add" onclick="myFunction()">
+<br>
+
+
+
+
+<th>Name</th>
+    <th>Percentage</th>
+
+<table id="myTable" style="border: 3px solid black;">
+
+
+  
+  <tr>
+    <td>Ajinkya </td>
+    <td>100</td>
+  </tr>
+  
+</table>
+
+
+
+
+
+</body>
+</html>

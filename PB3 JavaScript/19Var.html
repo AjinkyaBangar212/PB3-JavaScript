@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		
+   //var key word are create an windows object  create on DOM
+
+
+
+   var a = "Now This Is Globally Decaler And It Is Accecible inside The Function as well as outside the function";
+
+
+
+   function fun1()
+   {
+   	document.write(a);
+   }
+
+
+fun1();
+
+   	document.write(a);
+
+   	document.write("<br><br><br><br><br><br><br><br><br><br><br>");
+
+
+
+//////////////////////
+
+
+
+
+
+
+
+     function fun2()
+     {
+             var b = "Now This is local variable it is inside the function it cannot access outside the function";
+ 	               document.write(b);
+     }
+
+
+// if u try to access this outside the function it is not accesible it showing error
+
+//   document.write(b);             //it showing error
+
+ 
+
+ fun2();
+
+
+
+
+
+   	document.write("<br><br><br><br><br><br><br><br><br><br><br>");
+
+////////// now ex 3
+
+
+
+   function fun3()
+   {
+   	c = "Delclaring C as without var name and it treated accesible inside the fun as well as outside the fun <br>";
+
+   	document.write(c);    
+   }
+
+
+fun3();
+
+
+document.write(c);    
+
+
+
+
+
+
+
+
+
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

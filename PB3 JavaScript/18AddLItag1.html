@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		
+
+		function fun()
+		{
+        
+         var fn = document.getElementById("t1").value;
+         var u = document.getElementById("flist");
+         var l = document.createElement('li');
+
+         l.innerHTML = fn;
+         u.appendChild(l);
+
+
+
+		}
+
+
+	</script>
+</head>
+<body>
+
+	Enter Fruit Name : <input type="text" id="t1"><br>
+
+
+	<input type="button" value="CLICK FOR ADD" onclick="fun()"><br>
+
+
+	<ul id="flist">
+		<li>Mango</li>
+	</ul>
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		
+
+
+		function employee(name , salary)  //creating const
+		{
+       
+           this.name = name;
+           this.salary = salary;
+
+           return salary    +     name;
+
+		}
+
+         
+
+         var e = new employee("Ajinkya" , 999999999999);
+
+
+
+         document.write(e.name  + " " + e.salary);
+
+
+
+document.write("<br><br><br><br><br><br><br><br><br><br>");
+
+/////// 2nd ex
+
+
+
+       function fnamelname( x , y)   //creating constructor
+       { 
+           this.x = x;
+           this.y = y;
+     
+            
+
+                 return x + y;
+       }
+
+
+
+
+       	var m = new fnamelname("Ajinkya"  , "Bangar" );
+
+
+
+       	document.write(m.x + m.y);
+
+
+
+
+document.write("<br><br><br><br><br><br><br><br><br><br>");
+
+/////////////// ex 3
+
+
+
+
+
+    
+     function square(n)    //creating constructor
+              {
+  
+           this.n = n;
+
+           return n;
+
+              }
+
+
+
+       
+        var s = new square(60);
+
+
+        document.write(s.n * s.n);
+
+
+
+
+
+
+
+
+
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
